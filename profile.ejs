@@ -8,6 +8,13 @@
 <body>
     <h1>Wel : <%= user.name %></h1>
     <h1>email : <%= user.email %></h1>
+    <ul>
+        <% user.lang.forEach((item)=>{ %>
+          <li>
+            <%= item %>
+        </li>
+       <% })%>
+    </ul>
 
 </body>
 </html>

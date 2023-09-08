@@ -6,7 +6,8 @@
           express.get('/p',(req,res)=>{
              const user={
               name:'ankit',
-              email:'ankit@gmail.com'
+              email:'ankit@gmail.com',
+              lang :['html','css','java','react']  
              }
             // if file present in view then does not need the path.
             // res.render(`profile`,{user});
