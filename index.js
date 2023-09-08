@@ -1,23 +1,20 @@
           const exp=require('express')
           const express=exp();
-          const path =require('path')
-          const publicPth=path.join(__dirname,'public')
+           
+        // config the engine
+          express.set('view engine','ejs')
+          express.get('/p',(req,res)=>{
+             const user={
+              name:'ankit',
+              email:'ankit@gmail.com'
+             }
+            // if file present in view then does not need the path.
+            // res.render(`profile`,{user});
 
-          express.get('',(req,res)=>{
-            res.sendFile(`${publicPth}/index.html`)
+            // if file not present in view then need path
+            res.render(`${__dirname}/profile.ejs`,{user});
           })
-
-
-          express.get('/myHome',(req,res)=>{
-            res.sendFile(`${publicPth}/Home.html`)
-          })
-
-
-          // work as 404 page
-          express.get('*',(req,res)=>{
-            res.sendFile(`${publicPth}/Home.html`)
-          })
-
+            
 
           express.listen(5050,'localhost',()=>{
             console.log("success")
