@@ -7,5 +7,6 @@ const readData = async()=>{
     const data= await db.find({name:'Note6'}).toArray()
    console.log(data);
    
+   
 }
 readData();
