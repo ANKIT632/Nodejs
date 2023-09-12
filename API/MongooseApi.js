@@ -1,6 +1,5 @@
+// static curd operation
 const mongoose=require('mongoose');
-   
-
 const main=async()=>{
     await mongoose.connect("mongodb://0.0.0.0:27017/e-comm");
     const ProductSchema=new mongoose.Schema({
