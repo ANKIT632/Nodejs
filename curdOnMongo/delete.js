@@ -1,5 +1,5 @@
 const conndb=require('../mongodb')
-
+ 
 const deleteData = async()=>{
 
     const db=await conndb();
