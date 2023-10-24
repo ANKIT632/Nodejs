@@ -9,5 +9,5 @@ const deleteData = async()=>{
     if(data.acknowledged){
         console.warn("delete complete "+data.deletedCount +" value")
     }
-}
+} 
 deleteData();
