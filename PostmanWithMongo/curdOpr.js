@@ -10,7 +10,7 @@ app.use(express.json());
 // create
 
 app.post('/create', async(req,res)=>{
-    console.log(req.body)
+    
     let data=new product(req.body);
     const result= await data.save();
    res.send("done") 
