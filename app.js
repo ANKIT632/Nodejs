@@ -24,7 +24,7 @@
             // rename 
             fs.rename(newPath,`${dirPath}/curd.txt`,()=>{
                 if(!err){
-                    console.log("change file name")
+                    console.log("change file succ..")
                 }
             })
 
