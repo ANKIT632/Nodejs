@@ -14,7 +14,7 @@ console.log(req.params.key)
     });
  
    res.send(data) 
-   console.log(data);
+
 });
 
 app.listen(5000);
