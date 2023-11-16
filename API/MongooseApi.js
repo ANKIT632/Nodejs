@@ -48,8 +48,6 @@ const deleteData=async()=>{
     const ProductsModel=mongoose.model('products',ProductSchema);
     let data=await ProductsModel.deleteOne({name:"vivo"});
   
-    console.log(data) 
     
-
 }
 deleteData();
