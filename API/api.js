@@ -41,7 +41,7 @@ app.put('/:name',async(req,res)=>{
   
   });
 
-// delete
+// delete data
   app.delete('/:id',async(req,res)=>{
 
      const db =await dbconn();
